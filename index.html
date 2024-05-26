@@ -2,24 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Fruit Shop</title>
-    <!-- daisyui link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Fruit Shop</title>
+  <!-- daisyui link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font in lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- commn class library -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .lato-font {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-    <header>
-        
-    </header>
-    <main>
+<body class="lato-font">
+  <header class="container mx-auto">
+    <!-- nav section -->
+    <nav>
+      <div class="navbar bg-[#F85559] lg:p-4 rounded-full">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="menu hidden lg:flex menu-horizontal px-1 text-white text-xl font-medium">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center lg:flex p-2 lg:p-2 space-x-4">
+          <img src="images/logo.png" alt="">
+          <h3 class="text-white text-4xl font-bold">Fresh Fruit</h3>
+        </div>
+        <div class="navbar-end">
+          <div class="bg-white hidden lg:flex items-center justify-center px-7 py-5 rounded-full">
+            <input class="outline-none" type="text" placeholder="Search here">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
